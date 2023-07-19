@@ -1,0 +1,53 @@
+.placeholder-color::placeholder {
+    color: rgb(231, 230, 230);
+  }
+  
+  .thread-create-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .thread-input {
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link-button {
+    flex: 1;
+    color:blue;
+  }
+  
+  .create-button {
+    margin-left: 10px;
+    font-size:30px;
+    width:150px;
+    border-radius: 10px;
+    background-color:  rgb(152, 233, 152);
+    border: none;
+    color:white;
+  }
+  
+  .title-threads{
+    font-size: 30px;
+    /* margin:auto; */
+    text-align: center;
+    padding:20px;
+    padding-bottom:40px;
+  }
+
+  .text-input{
+margin:auto;
+width:60%;
+height:60px;
+font-size:30px;
+margin-bottom: 40px;;
+  }
+
+  .button-wrapper{
+    width:60%;
+    margin:auto;
+  }

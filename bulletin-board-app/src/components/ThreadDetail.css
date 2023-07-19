@@ -1,0 +1,56 @@
+.thread-detail-title {
+    padding:30px;
+    margin:auto;
+    font-size:30px;
+    text-align: center;
+}
+
+.thread-container{
+    display: flex;
+    align-items: flex-start;
+    margin:auto;
+}
+
+.thread-contents{
+width:60%;
+    margin:auto;
+}
+
+.posting{
+
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border:none;
+
+    }
+
+    p{
+text-align: center;
+background-color: white;
+height:auto;
+padding:20px;
+margin:20px;
+    }
+
+.comment-input {
+    margin-top:200px;
+    width: 80%;
+  height: 150px; 
+  border: none; 
+  outline: none; 
+ 
+}
+
+.submit-button {
+    margin-top:30px;
+  height: 50px; 
+  width: fit-content; 
+  border: none; 
+  background-color:  rgb(152, 233, 152);
+  color:white;
+  width: 80%; 
+  border-radius: 10px;
+  font-size:25px;
+}

@@ -1,0 +1,54 @@
+/* ThreadList.css */
+
+.threadList-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .threadList-buttons button {
+    margin-left: 10px;
+  }
+  
+  .list-title{
+    background-color: rgb(231, 230, 230);;
+    text-align: center;
+    font-size: 25px;
+    padding:30px;
+  }
+  body{
+    background-color: rgb(231, 230, 230);
+  }
+
+.table{
+  margin: auto; 
+  width:60%;
+  border-collapse:collapse;
+}
+.table th, .table td{
+  border:1px solid black;
+  padding:10px;
+  
+}
+
+.table th{
+
+  background-color: #FFFFFF;
+  color:#000000;
+}
+
+.table td{
+  font-size:25px;
+  height:40px;
+  background-color: #FFFFFF;
+  color:#000000;
+}
+
+.table a{
+  color:#000000;
+  text-decoration:none;
+}
+
+.link-style {
+  display: block;
+  height: 100%;
+}

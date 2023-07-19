@@ -1,0 +1,27 @@
+/* NavBar.css */
+
+.navbar {
+    display: flex;
+    align-items: center; /* Add this line */
+    justify-content: space-between;
+    background-color: rgb(152, 233, 152);
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  .large-text {
+    padding:20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.small-text {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    padding:20px;
+}
