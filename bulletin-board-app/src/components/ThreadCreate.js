@@ -1,16 +1,36 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./ThreadCreate.css";
 import { ThreadContext } from "./ThreadContext.js";
 
 const ThreadCreate = () => {
   const { threads, setThreads } = useContext(ThreadContext);
   const [text, setText] = useState("");
+  const history = useNavigate();
 
   const handleCreate = () => {
     if (text.trim() !== "") {
-      setThreads([...threads, text]);
-      setText("");
+      fetch(
+        "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ title: text }),
+        }
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          // 成功した場合、新しいスレッドを追加
+          setThreads([...threads, data]);
+          setText("");
+          history("/");
+        })
+        .catch((e) => console.error("Something went wrong", e)); // エラーハンドリング
     }
   };
 

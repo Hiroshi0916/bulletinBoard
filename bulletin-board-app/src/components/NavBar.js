@@ -9,7 +9,7 @@ const NavBar = () => (
     <Link to="/" className="large-text">
       掲示板
     </Link>
-    <Link to="/create" className="small-text">
+    <Link to="/thread/new" className="small-text">
       スレッドを立てる
     </Link>
   </div>
