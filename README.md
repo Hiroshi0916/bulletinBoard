@@ -1,2 +1,2 @@
 # BulletinBoard
-# React project
+## React project
