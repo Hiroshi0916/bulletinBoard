@@ -1,1 +1,2 @@
-# react-bulletinBoard
+# BulletinBoard
+# React project
